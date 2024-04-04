@@ -59,10 +59,14 @@ class IstoricConcursuriController extends Controller
 
     public  function view()
     {
-        $palmares = Auth::user()->palmares;
+        if (Auth::check()) {
+            $palmares = Auth::user()->palmares;
 
-        return Inertia::render('Palmares/Vizualizeaza', [
-            'istoric' => $palmares
-        ]);
+            return Inertia::render('Palmares/Vizualizeaza', [
+                'istoric' => $palmares
+            ]);
+        }
+
+        return redirect('/');
     }
 }
