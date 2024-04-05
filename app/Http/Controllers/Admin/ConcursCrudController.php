@@ -59,7 +59,7 @@ class ConcursCrudController extends CrudController
             'label' => 'Organizator',
             'type' => 'select',
             'entity' => 'user',
-            'attribute' => 'name'
+            'attribute' => 'prenume'
         ]);
 
         CRUD::addColumn([

@@ -10,13 +10,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::group([
     'prefix' => config('backpack.base.route_prefix', 'admin'),
-    'name' => 'test',
     'middleware' => array_merge(
         (array) config('backpack.base.web_middleware', 'web'),
         (array) config('backpack.base.middleware_key', 'admin')
     ),
     'namespace' => 'App\Http\Controllers\Admin',
-], function () { // custom admin routes
+], function () {
     Route::crud('user', 'UserCrudController');
     Route::crud('lac', 'LacCrudController');
     Route::crud('mansa', 'MansaCrudController');
@@ -25,4 +24,6 @@ Route::group([
     Route::crud('inscriere', 'InscriereCrudController');
     Route::crud('sector', 'SectorCrudController');
     Route::crud('palmares', 'PalmaresCrudController');
-}); // this should be the absolute last line of this file
+    Route::crud('alocare-stand', 'AlocareStandCrudController');
+    Route::crud('cantar', 'CantarCrudController');
+});

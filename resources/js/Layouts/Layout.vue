@@ -136,8 +136,6 @@ export default {
 
     mounted() {
         this.userTeamTreasholdReached = this.$page.props.userTeamTreasholdReached;
-
-
         this.sidebar = document.querySelector("aside");
         this.maxSidebar = document.querySelector(".max");
         this.miniSidebar = document.querySelector(".mini");
@@ -147,7 +145,7 @@ export default {
         this.content = document.querySelector('.content');
         this.moon = document.querySelector(".moon");
         this.sun = document.querySelector(".sun");
-        this.image = 'https://ui-avatars.com/api/?name=' + this.$page.props.auth.user.name
+        // this.image = 'https://ui-avatars.com/api/?name=' + this.$page.props.auth.user.name
     },
 
     methods: {
