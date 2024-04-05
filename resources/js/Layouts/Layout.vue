@@ -43,6 +43,10 @@ import Aside from "@/Components/NavBar/Aside.vue";
                                 Dashboard
                             </DropdownLink>
 
+                            <DropdownLink :href="route('import')" method="get" as="button">
+                                Import
+                            </DropdownLink>
+
                             <DropdownLink :href="route('logout')" method="post" as="button">
                                 Log Out
                             </DropdownLink>
