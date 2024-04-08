@@ -11,7 +11,7 @@
 <x-backpack::menu-item title="Alocare Standuri" icon="la la-link" :link="backpack_url('alocare-stand')" />
 <x-backpack::menu-item title="Cantarire" icon="la la-balance-scale" :link="backpack_url('cantar')" />
 
-<x-backpack::menu-separator title="Concursuri" />
+<x-backpack::enu-separator title="Concursuri" />
 <x-backpack::menu-item title="Inscrieri" icon="las la-newspaper" :link="backpack_url('inscriere')" />
 <x-backpack::menu-item title="Concursuri" icon="las la-trophy" :link="backpack_url('concurs')" />
 <x-backpack::menu-item title="Manse" icon="las la-sitemap" :link="backpack_url('mansa')" />
